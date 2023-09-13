@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <div>
       <Menu />
-      <div className="flex flex-col w-64">
+      <div className="flex  items-center justify-center ">
         <Languageoption onChange={(e) => handleClick(e)} />
       </div>
-      <h1>
+      <h1 className="space-y-2 m-10 flex items-center justify-center">
         {t("welcome")} {t("home")}
       </h1>
     </div>

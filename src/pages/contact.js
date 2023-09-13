@@ -6,24 +6,20 @@ import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 const Contactus = () => {
   const history = useNavigate();
-  const handleRedirect = () => {
-    history("/aboutus");
-  };
+
   const { t } = useTranslation();
   const handleClick = (e) => {
     i18next.changeLanguage(e.target.value);
   };
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div>
       <Menu />
-      <div className="flex flex-col w-64">
+      <div className="flex  items-center justify-center ">
         <Languageoption onChange={(e) => handleClick(e)} />
       </div>
-      <h1>
+      <h1 className="space-y-2 m-10 flex items-center justify-center">
         {t("welcome")} {t("contact")}
       </h1>
-      <input />
-      <button onClick={handleRedirect}>Submit</button>
     </div>
   );
 };
