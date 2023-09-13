@@ -1,11 +1,17 @@
 import "./menu.css";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div className="menu-wrapper" style={{ marginTop: "50px" }}>
-      <a href="/">Home</a>
-      <a href="/contactus">Contact Us</a>
-      <a href="/aboutus">About Us</a>
+    <div className="flex gap-y-[40px] flex-col ">
+      <div
+        className="flex space-x-[15px] p-6 flex-right  bg-slate-500 top-0 inset-x-0"
+        style={{ marginTop: "50px" }}
+      >
+        <Link to="/">Home</Link>
+        <Link to="/contactus">Contact Us</Link>
+        <Link to="/aboutus">About Us</Link>
+      </div>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Home = () => {
     i18next.changeLanguage(e.target.value);
   };
   return (
-    <div className=" bg-slate-500">
+    <div>
       <Menu />
       <Languageoption onChange={(e) => handleClick(e)} />
       <h1>
