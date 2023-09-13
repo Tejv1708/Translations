@@ -11,7 +11,9 @@ const Home = () => {
   return (
     <div>
       <Menu />
-      <Languageoption onChange={(e) => handleClick(e)} />
+      <div className="flex flex-col w-64">
+        <Languageoption onChange={(e) => handleClick(e)} />
+      </div>
       <h1>
         {t("welcome")} {t("home")}
       </h1>

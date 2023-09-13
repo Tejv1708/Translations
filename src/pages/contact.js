@@ -16,7 +16,9 @@ const Contactus = () => {
   return (
     <div style={{ marginTop: "50px" }}>
       <Menu />
-      <Languageoption onChange={(e) => handleClick(e)} />
+      <div className="flex flex-col w-64">
+        <Languageoption onChange={(e) => handleClick(e)} />
+      </div>
       <h1>
         {t("welcome")} {t("contact")}
       </h1>
